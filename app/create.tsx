@@ -22,7 +22,7 @@ function WebDateTimePicker({ value, onChange }) {
     minute: '2-digit',
     hour12: false,
   }).replace(' ', 'T');
-
+  console.log("123")
   return (
     <input
       type="datetime-local"
@@ -188,7 +188,7 @@ export default function CreatePredictionScreen() {
           <View style={styles.messageContainer}>
             <TextInput
               style={styles.messageInput}
-              placeholder="Your prediction..."
+              placeholder="Your prediction goes here"
               value={message}
               onChangeText={setMessage}
               multiline
